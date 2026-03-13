@@ -1,52 +1,20 @@
 package model;
 
 
+import java.util.ArrayList;
+
 public class Hamburguer {
-    private String ing1;
-    private String ing2;
-    private String ing3;
-    private String ing4;
+    private ArrayList<String> ingredientes;
 
-    public Hamburguer(String ing1, String ing2, String ing3, String ing4) {
-        this.ing1 = ing1;
-        this.ing2 = ing2;
-        this.ing3 = ing3;
-        this.ing4 = ing4;
+    public Hamburguer(ArrayList<String> ingredientes) {
+        this.ingredientes = ingredientes;
     }
 
-    public String getTudo(){
-        return ing1 + " " + ing2+ " " + ing3 + " " + ing4;
+    public ArrayList<String> getIngredientes() {
+        return ingredientes;
     }
 
-    public String getIng1() {
-        return ing1;
-    }
-
-    public void setIng1(String ing1) {
-        this.ing1 = ing1;
-    }
-
-    public String getIng2() {
-        return ing2;
-    }
-
-    public void setIng2(String ing2) {
-        this.ing2 = ing2;
-    }
-
-    public String getIng3() {
-        return ing3;
-    }
-
-    public void setIng3(String ing3) {
-        this.ing3 = ing3;
-    }
-
-    public String getIng4() {
-        return ing4;
-    }
-
-    public void setIng4(String ing4) {
-        this.ing4 = ing4;
+    public void setIngredientes(ArrayList<String> ingredientes) {
+        this.ingredientes = ingredientes;
     }
 }
