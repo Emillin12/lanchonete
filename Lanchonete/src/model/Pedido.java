@@ -5,6 +5,7 @@ public class Pedido {
     private Cliente cliente;
     private Hamburguer hamburguer;
 
+
     public Pedido(Cliente cliente, Hamburguer hamburguer) {
         this.cliente = cliente;
         this.hamburguer = hamburguer;
